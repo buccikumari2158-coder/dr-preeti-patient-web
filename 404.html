@@ -2,12 +2,10 @@
 <html lang="en">
   <head>
 <script>
-// GitHub Pages serves this file for any path it cannot find, and it only ever
-// uses the 404.html at the site root - a copy inside /admin is never consulted.
-// Without this, an admin URL such as /admin/appointments would fall through to
-// the patient app below. Send those to the admin panel and let its own router
-// take over. Patient deep links need no redirect: this file *is* the patient
-// app, so it boots and routes normally.
+// GitHub Pages serves this file for any path it cannot find, and only ever the
+// copy at the site root. Without this, an admin URL such as /admin/appointments
+// would fall through to the patient app below. Written without a hardcoded
+// prefix so it keeps working under a custom domain.
 (function () {
   var m = location.pathname.match(/^(.*?)\/admin(?:\/|$)/);
   if (m) location.replace(m[1] + '/admin/');
@@ -47,6 +45,6 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="/dr-preeti-patient-web/_expo/static/js/web/entry-46f8262395c42ba38f8929bd6ee722e6.js" defer></script>
+  <script src="/dr-preeti-patient-web/_expo/static/js/web/entry-fe4862e38cfc9edf4989c504512edd6b.js" defer></script>
 </body>
 </html>
