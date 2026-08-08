@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<script>
+// GitHub Pages serves this file for any path it cannot find, and it only ever
+// uses the 404.html at the site root - a copy inside /admin is never consulted.
+// Without this, an admin URL such as /admin/appointments would fall through to
+// the patient app below. Send those to the admin panel and let its own router
+// take over. Patient deep links need no redirect: this file *is* the patient
+// app, so it boots and routes normally.
+(function () {
+  var m = location.pathname.match(/^(.*?)\/admin(?:\/|$)/);
+  if (m) location.replace(m[1] + '/admin/');
+})();
+</script>
+
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
