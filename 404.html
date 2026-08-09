@@ -2,16 +2,10 @@
 <html lang="en">
   <head>
 <script>
-// GitHub Pages serves this file for any path it cannot find, and only ever the
-// copy at the site root. Without this, an admin URL such as /admin/appointments
-// would fall through to the patient app below. Written without a hardcoded
-// prefix so it keeps working under a custom domain.
 (function () {
-  var m = location.pathname.match(/^(.*?)\/admin(?:\/|$)/);
-  if (m) location.replace(m[1] + '/admin/');
+  if (/^\/admin(\/|$)/.test(location.pathname)) location.replace('/admin/');
 })();
 </script>
-
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -36,7 +30,7 @@
     </style>
   <meta name="theme-color" content="#0055A4">
 <meta name="description" content="Book appointments, view prescriptions and manage your health profile at Dr. Preeti Samal's clinic.">
-<link rel="preload" href="/dr-preeti-patient-web/_expo/static/css/native-tabs.module-b4e264a89cb86b45af23fba5e5d58f55.css" as="style"><link rel="stylesheet" href="/dr-preeti-patient-web/_expo/static/css/native-tabs.module-b4e264a89cb86b45af23fba5e5d58f55.css"><link rel="icon" href="/dr-preeti-patient-web/favicon.ico" /></head>
+<link rel="preload" href="/_expo/static/css/native-tabs.module-b4e264a89cb86b45af23fba5e5d58f55.css" as="style"><link rel="stylesheet" href="/_expo/static/css/native-tabs.module-b4e264a89cb86b45af23fba5e5d58f55.css"><link rel="icon" href="/favicon.ico" /></head>
 
   <body>
     <!-- Use static rendering with Expo Router to support running without JavaScript. -->
@@ -45,6 +39,6 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="/dr-preeti-patient-web/_expo/static/js/web/entry-fe4862e38cfc9edf4989c504512edd6b.js" defer></script>
+  <script src="/_expo/static/js/web/entry-80959d2bb3d41e6be8501aa03679c1d5.js" defer></script>
 </body>
 </html>
