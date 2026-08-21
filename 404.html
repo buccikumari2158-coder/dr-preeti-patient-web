@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<script>
+// Pages serves the site-root 404.html for any unknown path, including ones
+// under /admin. Without this an admin deep link would boot the patient app.
+(function () {
+  if (/^\/admin(\/|$)/.test(location.pathname)) location.replace('/admin/');
+})();
+</script>
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -34,6 +41,6 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="/_expo/static/js/web/entry-bd8c36a792b79376fc0587d9fed74b95.js" defer></script>
+  <script src="/_expo/static/js/web/entry-01feeeac5ff222d7c83b394295dd0f8e.js" defer></script>
 </body>
 </html>
