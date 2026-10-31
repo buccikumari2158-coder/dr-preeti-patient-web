@@ -59,6 +59,9 @@
   .muted { color: var(--muted); }
   .contact { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 8px; }
   footer { text-align: center; font-size: 14px; color: var(--muted); padding: 0 16px 32px; }
+  footer a { color: inherit; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .credit { white-space: nowrap; font-size: 13px; }
 </style>
 </head>
 <body>
@@ -75,6 +78,7 @@
     <nav class="top" aria-label="Legal pages">
       <a href="/privacy-policy/" aria-current="page">Privacy Policy</a>
       <a href="/terms/">Terms &amp; Conditions</a>
+      <a href="/delete-data/">Delete your data</a>
       <a href="/">Clinic website</a>
     </nav>
 
@@ -185,7 +189,8 @@
     </ul>
     <p><strong>Deleting your data:</strong> contact us (section 12) with the name and phone number you used in the app.
       We will delete your profile, appointment history, notifications and push ID within 30 days, except records the
-      law requires us to keep.</p>
+      law requires us to keep. Step-by-step instructions are on the
+      <a href="/delete-data/">Delete your data</a> page.</p>
 
     <h2>10. Children</h2>
     <p>The app is not meant to be used by children on their own. A parent or guardian should book appointments for
@@ -203,6 +208,6 @@
   </div>
 </main>
 
-<footer>© 2026 Dr. Preeti Samal’s clinic</footer>
+<footer>© 2026 Dr. Preeti Samal’s clinic <span class="credit">· Built by <a href="https://app-genesis.in">App Genesis</a></span></footer>
 </body>
 </html>
