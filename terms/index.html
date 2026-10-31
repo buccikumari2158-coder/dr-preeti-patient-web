@@ -56,6 +56,9 @@
   @media (prefers-color-scheme: dark) { a { color: #9cc8f5; } }
   .contact { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 8px; }
   footer { text-align: center; font-size: 14px; color: var(--muted); padding: 0 16px 32px; }
+  footer a { color: inherit; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .credit { white-space: nowrap; font-size: 13px; }
 </style>
 </head>
 <body>
@@ -72,6 +75,7 @@
     <nav class="top" aria-label="Legal pages">
       <a href="/privacy-policy/">Privacy Policy</a>
       <a href="/terms/" aria-current="page">Terms &amp; Conditions</a>
+      <a href="/delete-data/">Delete your data</a>
       <a href="/">Clinic website</a>
     </nav>
 
@@ -146,6 +150,6 @@
   </div>
 </main>
 
-<footer>© 2026 Dr. Preeti Samal’s clinic</footer>
+<footer>© 2026 Dr. Preeti Samal’s clinic <span class="credit">· Built by <a href="https://app-genesis.in">App Genesis</a></span></footer>
 </body>
 </html>
